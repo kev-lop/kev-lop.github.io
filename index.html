@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal Chatbot Website</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://clever-int.boost.ai; connect-src https://clever-int.boost.ai;">
+    <title>My Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            line-height: 1.6;
             margin: 0;
-            padding: 40px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         h1 {
-            color: #4a90e2;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>Minimal Chatbot Implementation</h1>
-    <p>The chat should appear automatically or have a button in the corner.</p>
-    <p>If you don't see anything, check the browser console for errors.</p>
-
-    <!-- Chat panel embed code exactly as provided -->
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple website with the Boost.ai chat widget embedded.</p>
+    
+    <!-- Boost.ai Chat Widget -->
     <script src="https://clever-int.boost.ai/chatPanel/chatPanel.js"></script>
     <script>
-        var boost = window.boostInit("clever-int");
+      var boost = window.boostInit("clever-int");
     </script>
 </body>
 </html>
