@@ -16,32 +16,29 @@
         h1 {
             color: #333;
         }
-        button {
-            padding: 10px 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
     </style>
 </head>
 <body>
     <h1>Welcome to My Website</h1>
     <p>This is a simple website with the Boost.ai chat widget embedded.</p>
     
-    <!-- Custom chat launcher button -->
-    <button onclick="boost.show()">Start Chat</button>
-    
-    <!-- Boost.ai Chat Widget -->
+    <!-- Boost.ai Chat Widget with default launcher -->
     <script src="https://clever-int.boost.ai/chatPanel/chatPanel.js"></script>
     <script>
-      var boost = window.boostInit("clever-int");
+      var boost = window.boostInit("clever-int", {
+        // Try with default options
+        startLanguage: "en", 
+        showLauncher: true
+      });
+      
+      // Alternative way to open chat without button
+      // window.addEventListener('load', function() {
+      //   setTimeout(function() {
+      //     if (boost && typeof boost.showPanel === 'function') {
+      //       boost.showPanel();
+      //     }
+      //   }, 1000);
+      // });
     </script>
 </body>
 </html>
