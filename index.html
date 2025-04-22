@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clever Intern AI-assistent</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clever Intern AI-assistent</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      color: #fff;
+    }
+
+    /* Baggrund + overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                  url(https://cdn.midjourney.com/12aac37e-8dd1-4b04-815c-f4366b6529f3/0_2.png) no-repeat center center;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    h1, h2, h3 {
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    p, li {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    ol, ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Velkommen til Clevers nye interne AI-assistent!</h1>
-        <p>Dette er det midlertidige tilholdssted for vores nye interne AI-assistent, som er sat i verden for at hjælpe dig med hurtigere at få svar på dine spørgsmål</p>
-    
-    <h3>Sådan gør du:</h3>
-    <ol>
-        <li>Tryk på 'Start her' for at åbne chatten.</li>
-        <li>Spørg løs!</li>
-        <li>Hvis den ikke helt forstår, hvad du mener, så prøv at omformulere, giv lidt mere kontekst, eller genindlæs siden og spørg igen.</li>
-        <li>Hvis du får et dårligt svar, så husk at:
-            <ul>
-                <li>Rate med ’thumbs down’</li>
-                <li>Skriv en kommentar om, hvad svaret manglede.</li>
-            </ul>
-        </li>
-    </ol>
+  <h1>Velkommen til Clevers nye interne AI-assistent!</h1>
+  <p>Dette er det midlertidige tilholdssted for vores nye interne AI-assistent, som er sat i verden for at hjælpe dig med hurtigere at få svar på dine spørgsmål</p>
 
-    <h3>Er det kritisk?</h3>
-    <ul>
-        <li>Kom forbi flyverpladserne, eller giv feedbacken direkte videre til Pernille, Kosovare eller Sine fra AI-teamet.</li>
-    </ul>
+  <h3>Sådan gør du:</h3>
+  <ol>
+    <li>Tryk på 'Start her' for at åbne chatten.</li>
+    <li>Spørg løs!</li>
+    <li>Hvis den ikke helt forstår, hvad du mener, så prøv at omformulere, giv lidt mere kontekst, eller genindlæs siden og spørg igen.</li>
+    <li>Hvis du får et dårligt svar, så husk at:
+      <ul>
+        <li>Rate med ’thumbs down’</li>
+        <li>Skriv en kommentar om, hvad svaret manglede.</li>
+      </ul>
+    </li>
+  </ol>
 
-    <h2>God spørgelyst!</h2>
-            
-    <!-- Boost.ai Chat Widget with default launcher -->
-    <script src="https://clever-int.boost.ai/chatPanel/chatPanel.js"></script>
-    <script>
-      var boost = window.boostInit("clever-int", {
-        // Try with default options
-        startLanguage: "en", 
-        showLauncher: true
-      });
-      
-      // Alternative way to open chat without button
-      // window.addEventListener('load', function() {
-      //   setTimeout(function() {
-      //     if (boost && typeof boost.showPanel === 'function') {
-      //       boost.showPanel();
-      //     }
-      //   }, 1000);
-      // });
-    </script>
+  <h3>Er det kritisk?</h3>
+  <ul>
+    <li>Kom forbi flyverpladserne, eller giv feedbacken direkte videre til Pernille, Kosovare eller Sine fra AI-teamet.</li>
+  </ul>
+
+  <h2>God spørgelyst!</h2>
+
+  <!-- Boost.ai Chat Widget with default launcher -->
+  <script src="https://clever-int.boost.ai/chatPanel/chatPanel.js"></script>
+  <script>
+    var boost = window.boostInit("clever-int", {
+      startLanguage: "en",
+      showLauncher: true
+    });
+  </script>
 </body>
 </html>
