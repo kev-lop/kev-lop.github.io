@@ -83,14 +83,19 @@
     <h2>God spørgelyst!</h2>
   </div>
 
-  <!-- Boost.ai Chat Widget with default launcher -->
-  <script src="https://clever-int.boost.ai/chatPanel/chatPanel.js"></script>
-  <script>
-    var boost = window.boostInit("clever-int", {
-      startLanguage: "en",
-      showLauncher: true,
-      openTextLinksInNewTab: true
-    });
-  </script>
+<!-- Boost.ai Chat Widget with default launcher -->
+<script src="https://clever-int.boost.ai/chatPanel/chatPanel.js"></script>
+<script>
+  var boost = window.boostInit("clever-int", {
+    startLanguage: "en",
+    showLauncher: true,
+    chatPanel: {
+      settings: {
+        openTextLinksInNewTab: true
+      }
+    }
+  });
+</script>
+  
 </body>
 </html>
