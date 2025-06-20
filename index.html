@@ -1,101 +1,155 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Clever Intern AI-assistent</title>
-  <style>
-    /* Baggrund med mørkt overlay og blur */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                  url(https://cdn.midjourney.com/12aac37e-8dd1-4b04-815c-f4366b6529f3/0_2.png) no-repeat center center;
-      background-size: cover;
-      filter: blur(2px) brightness(0.8);
-      z-index: -2;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lynet er flyttet</title>
+    <style>
+        /* Baggrund med mørkt overlay og blur */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url(https://cdn.midjourney.com/12aac37e-8dd1-4b04-815c-f4366b6529f3/0_2.png) no-repeat center center;
+            background-size: cover;
+            filter: blur(2px) brightness(0.8);
+            z-index: -2;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 40px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      color: #fff;
-      z-index: 1;
-      position: relative;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+            z-index: 1;
+            position: relative;
+        }
 
-    .content {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 800px;
-      width: 100%;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    }
+        .content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            text-align: center;
+        }
 
-    h1, h2, h3 {
-      color: #fff;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-    }
+        h1 {
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
 
-    p, li {
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-    }
+        h2 {
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            margin-bottom: 25px;
+            font-size: 1.5em;
+        }
 
-    ol, ul {
-      padding-left: 20px;
-    }
-  </style>
+        p {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .redirect-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .redirect-button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .small-text {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 30px;
+        }
+
+        .emoji {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Auto-redirect countdown */
+        .countdown {
+            font-size: 1.1em;
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Velkommen til Clevers nye interne AI-assistent!</h1>
-    <p>Vores nye interne AI-assistent er sat i verden for at hjælpe dig med hurtigere at få svar på dine spørgsmål</p>
+    <div class="content">
+        <div class="emoji">🚀</div>
+        
+        <h1>Lynet er flyttet!</h1>
+        
+        <p>Vores AI-assistent har fået et nyt og forbedret hjem. Du vil automatisk blive omdirigeret om få sekunder.</p>
+        
+        <div class="highlight">
+            <h2>Find og bogmærk Lynets på den nye adresse:</h2>
+            <p><strong>lynet.dev.clever.dk</strong></p>
+        </div>
+        
+        <a href="https://lynet.dev.clever.dk/" class="redirect-button">
+            Gå til Lynet nu →
+        </a>
+        
+        <div class="countdown" id="countdown">
+            Automatisk omdirigering om <span id="timer">10</span> sekunder...
+        </div>
+        
+        <div class="small-text">
+            <p>Opdater dine bogmærker til den nye adresse!</p>
+        </div>
+    </div>
 
-    <h3>Sådan gør du:</h3>
-    <ol>
-      <li>Tryk på 'Start her' for at åbne chatten.</li>
-      <li>Spørg løs!</li>
-      <li>Hvis den ikke helt forstår, hvad du mener, så prøv at omformulere, giv lidt mere kontekst, eller genindlæs siden og spørg igen.</li>
-      <li>Hvis du får et dårligt svar, så husk at:
-        <ul>
-          <li>Rate med ’thumbs down’</li>
-          <li>Skriv en kommentar om, hvad svaret manglede.</li>
-        </ul>
-      </li>
-    </ol>
-
-    <h3>Er det kritisk?</h3>
-    <ul>
-      <li>Kom forbi flyverpladserne, eller giv feedbacken direkte videre til Pernille, Kosovare eller Sine fra AI-teamet.</li>
-    </ul>
-
-    <h2>God spørgelyst!</h2>
-  </div>
-
-<!-- Boost.ai Chat Widget with default launcher -->
-<script src="https://clever-int.boost.ai/chatPanel/chatPanel.js"></script>
-<script>
-  var boost = window.boostInit("clever-int", {
-    startLanguage: "da-DK",
-    showLauncher: true,
-    chatPanel: {
-      settings: {
-        openTextLinksInNewTab: true
-      }
-    }
-  });
-</script>
-  
+    <script>
+        let countdown = 10;
+        const timerElement = document.getElementById('timer');
+        
+        const countdownInterval = setInterval(() => {
+            countdown--;
+            timerElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = 'https://lynet.dev.clever.dk/';
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
